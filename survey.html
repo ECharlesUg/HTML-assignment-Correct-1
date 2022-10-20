@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <!--The style tag and the contents in it defines the yellow header at top of page and background color-->
+    <style>
+      body {
+        background-color: blanchedalmond;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: orange;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #c0452f;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--Heading at top of page-->
+      <center>
+        <h1>Afropop Artists</h1>
+        <b>
+          "My pipo no dey fear di air wey dey around dem; den dey always get
+          esxcuse wey make dem no fit fight for freedom"- Fela Kuti(1938-1997)
+        </b>
+      </center>
+      <nav>
+        <ul>
+          <!--Links the other web pages-->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="more.html">More</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>Listen to a sample of each songs and answer the survey at the end</p>
+      <br />
+
+      <!--Defines the youtube videos at the middle of webpage>-->
+      <center>
+        <h4>KU LO SA- Oxlade</h4>
+        <a href="https://youtu.be/1pDQjwaH3qk" target="_blank">
+          Click link to view music video on youtube
+        </a>
+        <br />
+        <iframe
+          src="https://www.youtube.com/embed/1pDQjwaH3qk"
+          width="40%"
+          height="300px"
+          frameborder="1"
+          title="KU LO SA- Oxlade"
+        ></iframe>
+        <h4>PlayBoy- FireboyDML</h4>
+        <a href="https://youtu.be/s5Ceoz1hlyw" target="_blank">
+          Click link to view music video on youtube
+        </a>
+        <br />
+        <iframe
+          src="https://www.youtube.com/embed/s5Ceoz1hlyw"
+          width="40%"
+          height="300px"
+          frameborder="1"
+          title="PlayBoy- FireboyDML"
+        ></iframe>
+        <h4>Bloody Samaritan- Ayra Starr</h4>
+        <a href="https://youtu.be/zcR0PWGfUhs" target="_blank">
+          Click link to view music video on youtube
+        </a>
+        <br />
+        <iframe
+          src="https://www.youtube.com/embed/zcR0PWGfUhs"
+          width="40%"
+          height="300px"
+          frameborder="1"
+          title="Bloody Samaritan- Ayra Starr"
+        ></iframe>
+
+        <!---Defines survey that picks only one option below on webpage-->
+      </center>
+      <br />
+      <br />
+
+      <!--mehthod tag decides if website is secure or not and action tag displays which page will load after input is submitted-->
+      <form
+        name="aforbeat-survey"
+        id="afrobeats"
+        method="get"
+        action="index.html"
+      >
+        <fieldset>
+          <legend>Pick your favourite song out of the three above</legend>
+          <input type="radio" id="ayrastarr" name="song" value="ayrastarr" />
+          <label for="ayrastarr">Bloody Samaritan</label>
+
+          <br />
+
+          <input type="radio" id="oxalade" name="song" value="oxalade" />
+          <label for="oxalade">KU LO SA</label>
+
+          <br />
+
+          <input type="radio" id="fireboydml" name="song" value="fireboydml" />
+          <label for="fireboydml">PlayBoy</label>
+
+          <br />
+          <br />
+        </fieldset>
+        <br />
+        <br />
+
+        <!--Definse the form which allows user to input-->
+        <label for="afrobeat-pop">
+          Please enter the afrobeat music you suggest i listen to [required]:
+        </label>
+
+        <input type="text" name="aforbeat" id="afrobeat-pop" required />
+        <br />
+        <br />
+
+        <label for="name">Artist [required]:</label>
+
+        <br />
+
+        <input type="text" id="Uname" name="Uname" value="" required />
+
+        <br />
+        <br />
+
+        <!--Defines the submit and reset button. Reset to clear all inputs and Submit to send all inputs to creator-->
+        <input type="submit" value="Submit" />
+
+        <input type="reset" name="ClearForm" id="clear" value="Reset" />
+      </form>
+    </main>
+    <!--Defines the footer at bottom of page-->
+    <footer>
+      <p>&#169; 2022 Emmanuella</p>
+    </footer>
+  </body>
+</html>
